@@ -29,13 +29,13 @@ public class Reptil extends Animal {
 	}
 	
 	public void crearIguana(String nombre, int edad, String genero) {
-		new Reptil(nombre, edad, "huumedal", genero, "verde", 3);
 		iguanas++;
+		new Reptil(nombre, edad, "huumedal", genero, "verde", 3);
 	}
 	
 	public void crearSerpiente(String nombre, int edad, String genero) {
-		new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 		serpientes++;
+		new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}
 	
 	public ArrayList<Reptil> getListado(){
