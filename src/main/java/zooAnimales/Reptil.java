@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Reptil extends Animal {
 	private static ArrayList<Reptil> listado = new ArrayList<Reptil>();
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
@@ -28,14 +28,14 @@ public class Reptil extends Animal {
 		return listado.size();
 	}
 	
-	public void crearIguana(String nombre, int edad, String genero) {
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
 		iguanas++;
-		new Reptil(nombre, edad, "huumedal", genero, "verde", 3);
+		return new Reptil(nombre, edad, "huumedal", genero, "verde", 3);
 	}
 	
-	public void crearSerpiente(String nombre, int edad, String genero) {
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
 		serpientes++;
-		new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
+		return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
 	}
 	
 	public ArrayList<Reptil> getListado(){
